@@ -1,0 +1,43 @@
+.about-page {
+  background-color: #b1dfe0;
+  color: #000000;
+  padding: 40px 20px; /* added horizontal padding for responsiveness */
+  min-height: 60vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(178, 242, 187, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.about-page h2 {
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-page p,
+.about-page li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+.about-page ul {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.5rem;
+  }
+}

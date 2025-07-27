@@ -1,0 +1,269 @@
+
+
+/* Ensure body takes full height and removes scroll gap */
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+   background-color: #e0f7e9 ;
+}
+
+/* Make sure home-page stretches */
+.home-page {
+  min-height: 100vh; /* Fill vertical screen */
+  width: 100vw;       /* Fill horizontal screen */
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Hero */
+.hero {
+  background-color: #b1dfe0;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1 1 300px;
+}
+.hero-text h1 {
+  margin-bottom: 10px;
+  color: #000;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tips */
+.tips {
+  background-color: #b1dfe0;
+  border-left: 6px solid #000;
+  padding: 1.5rem 2rem;
+  margin: 4rem 0;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Weight Guide */
+.weight-guide {
+  margin: 3rem 0;
+}
+.weight-guide select {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.wellness-box {
+  background-color: #e0f7e9;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+.wellness-box h3 {
+  color: #000;
+  margin-top: 1rem;
+}
+.wellness-box p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Activities */
+.activities h2 {
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background-color: #b1dfe0;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 280px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+.card p {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.weight-wellness select {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.wellness-box {
+  background: #d8f5e6;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.wellness-box ul {
+  padding-left: 20px;
+}
+.wellness-box ul {
+  list-style: none; /* remove bullet */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px; /* optional to control width */
+  text-align: left;
+}
+
+.wellness-box li {
+  background-color: #f0fff4;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* Custom bullet */
+.wellness-box li::before {
+  content: "•";
+  color: #00a86b;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0.8rem;
+  top: 1rem;
+}
+
+.exercise-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.exercise-table th,
+.exercise-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.exercise-table th {
+  background-color: #b1dfe0;
+}
+.workout-section {
+  background-color: #e0f7f5;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.workout-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.exercise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.exercise-card {
+  background-color: #b1dfe0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.exercise-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.exercise-card h3 {
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.exercise-card ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.exercise-card li {
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+.activities {
+  text-align: center;
+}
+
+.weight-wellness {
+  text-align: center;
+}
+
